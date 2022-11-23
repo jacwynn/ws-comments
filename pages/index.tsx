@@ -1,5 +1,11 @@
 import Head from "next/head";
 
+//components
+import Comments from "../components/Comments";
+
+//data
+import { commentsData } from "../data/comments";
+
 export default function Home() {
   return (
     <div>
@@ -11,7 +17,7 @@ export default function Home() {
         />
       </Head>
 
-      <h1>HomePage</h1>
+      <Comments comments={commentsData} />
     </div>
   );
 }
