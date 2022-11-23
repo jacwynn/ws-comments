@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { commentsData } from "../../data/comments";
 
-//defines types being used within object
+//defines types being used within object - possibly move this to another folder
 type Data = {
   id: number;
   content: string;
